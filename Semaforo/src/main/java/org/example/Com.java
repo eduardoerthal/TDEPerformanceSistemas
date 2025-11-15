@@ -27,7 +27,6 @@ public class Com {
 
         long tInicio = System.currentTimeMillis();
 
-        // CORREÇÃO: enviar apenas T tarefas para o pool, não I
         for (int i = 0; i < T; i++) {
             pool.submit(r);
         }

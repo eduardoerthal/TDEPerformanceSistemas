@@ -1,10 +1,5 @@
 TDE-3 — Performance Sistemas Ciberfisicos
 
-Grupo
-Eduardo Erthal de Oliveira
-Milena Ferraz
-
-
 Descrição do problema
 
 O Jantar dos Filósofos é um exemplo clássico de sincronização que demonstra situações em que vários processos disputam recursos compartilhados.
