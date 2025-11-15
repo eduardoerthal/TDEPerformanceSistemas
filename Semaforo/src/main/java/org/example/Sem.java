@@ -15,7 +15,7 @@ public class Sem {
             }
         };
 
-        long tInicio = System.currentTimeMillis();
+        long tComeco = System.currentTimeMillis();
         for (int i = 0; i < T; i++){
             pool.submit(r);
         }
@@ -26,8 +26,8 @@ public class Sem {
         System.out.println("\nNumero Total de Incrementos: " + I);
         System.out.println("\nValor Esperado: " + T * I);
         System.out.println("\nValor Obtido: " + count);
-        long tTot = tFim - tInicio;
-        System.out.println("\nTempo Total: " + tTot);
+        long tTot = tFim - tComeco;
+        System.out.println("\nTempo Total: " + tTot + "ms");
 
     }
 }
