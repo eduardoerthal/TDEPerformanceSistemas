@@ -104,13 +104,8 @@ Políticas de agendamento que favoreçam justiça
 Com essas medidas, todos terão oportunidades de comer.
 
 Conclusão
-
-O estudo apresentou:
+A realização do trabalho apresentou:
 
 Os conceitos de deadlock e starvation
 
 Uma solução que previne o impasse
-
-A justificativa de por que o protocolo funciona
-
-Esses fundamentos são essenciais para compreender os próximos tópicos do trabalho, como condições de corrida e deadlocks envolvendo múltiplos locks.
