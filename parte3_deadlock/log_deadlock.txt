@@ -1,0 +1,29 @@
+[17:34:53] Iniciando reproducao do DEADLOCK (Thread 1: A->B ; Thread 2: B->A)
+[17:34:53] Thread 1: tentando adquirir LOCK_A
+[17:34:53] Thread 1: adquiriu LOCK_A
+[17:34:53] Thread 2: tentando adquirir LOCK_B
+[17:34:53] Thread 2: adquiriu LOCK_B
+[17:34:54] Thread 1: tentando adquirir LOCK_B
+[17:34:54] Thread 2: tentando adquirir LOCK_A
+[17:34:56] ------------------------------------------------------------
+[17:34:56] TIMEOUT de 3.0s atingido: 2 thread(s) ainda bloqueada(s) -> DEADLOCK CONFIRMADO.
+[17:34:56] Threads travadas: ['Thread-1', 'Thread-2']
+[17:34:56] threading.enumerate() no momento do travamento: ['MainThread', 'Thread-1', 'Thread-2']
+[17:34:56] Dump de pilha de cada thread (diagnostico tipo jstack):
+Thread 0x00004080 (most recent call first):
+  File "c:\Users\eduar\OneDrive\\xc1rea de Trabalho\Performance-Sistemas\tde-concorrencia\parte3_deadlock\deadlock_versao_trava.py", line 74 in thread2
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982 in run
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045 in _bootstrap_inner
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1002 in _bootstrap
+
+Thread 0x00006c50 (most recent call first):
+  File "c:\Users\eduar\OneDrive\\xc1rea de Trabalho\Performance-Sistemas\tde-concorrencia\parte3_deadlock\deadlock_versao_trava.py", line 58 in thread1
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982 in run
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045 in _bootstrap_inner
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1002 in _bootstrap
+
+Current thread 0x000012b4 (most recent call first):
+  File "c:\Users\eduar\OneDrive\\xc1rea de Trabalho\Performance-Sistemas\tde-concorrencia\parte3_deadlock\deadlock_versao_trava.py", line 107 in main
+  File "c:\Users\eduar\OneDrive\\xc1rea de Trabalho\Performance-Sistemas\tde-concorrencia\parte3_deadlock\deadlock_versao_trava.py", line 120 in <module>
+[17:34:56] ------------------------------------------------------------
+[17:34:56] O programa nao terminaria sozinho (threads travadas para sempre nos locks). Encerrando o processo manualmente para fins de demonstracao.

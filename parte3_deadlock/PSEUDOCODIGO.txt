@@ -1,0 +1,105 @@
+PSEUDOCODIGO - DEADLOCK COM DOIS LOCKS
+==========================================================================
+
+VERSAO QUE TRAVA (ordens de aquisicao opostas entre as threads)
+--------------------------------------------------------------------------
+LOCK_A, LOCK_B = locks distintos
+
+Thread 1:
+    adquirir(LOCK_A)
+    dormir(50ms)        # aumenta a chance do deadlock
+    adquirir(LOCK_B)
+    imprimir "T1 concluiu"
+    liberar(LOCK_B)
+    liberar(LOCK_A)
+
+Thread 2:
+    adquirir(LOCK_B)
+    dormir(50ms)
+    adquirir(LOCK_A)
+    imprimir "T2 concluiu"
+    liberar(LOCK_A)
+    liberar(LOCK_B)
+
+
+VERSAO CORRIGIDA (hierarquia / ordem global de aquisicao)
+--------------------------------------------------------------------------
+Regra global: SEMPRE adquirir LOCK_A antes de LOCK_B, em TODAS as threads.
+
+Thread 1 e Thread 2 (mesmo codigo para as duas):
+    adquirir(LOCK_A)
+    dormir(50ms)
+    adquirir(LOCK_B)
+    // secao critica
+    liberar(LOCK_B)
+    liberar(LOCK_A)
+
+
+FLUXOGRAMA (texto) - VERSAO QUE TRAVA
+==========================================================================
+
+   THREAD 1                          THREAD 2
+   ---------                         ---------
+   adquirir(LOCK_A)  <-- OK           adquirir(LOCK_B)  <-- OK
+        |                                  |
+        v                                  v
+   dormir(50ms)                       dormir(50ms)
+        |                                  |
+        v                                  v
+   adquirir(LOCK_B)  <-- BLOQUEIA     adquirir(LOCK_A)  <-- BLOQUEIA
+   (Thread 2 tem LOCK_B)              (Thread 1 tem LOCK_A)
+        |                                  |
+        +------------- DEADLOCK -----------+
+        (cada thread espera por um lock que a outra possui)
+
+
+FLUXOGRAMA (texto) - VERSAO CORRIGIDA
+==========================================================================
+
+   THREAD 1                          THREAD 2
+   ---------                         ---------
+   adquirir(LOCK_A)  <-- OK           adquirir(LOCK_A)  <-- BLOQUEIA
+        |                             (espera Thread 1 liberar)
+        v                                  |
+   dormir(50ms)                            |
+        |                                  |
+        v                                  |
+   adquirir(LOCK_B)  <-- OK                |
+        |                                  |
+        v                                  |
+   secao critica                           |
+        |                                  |
+        v                                  |
+   liberar(LOCK_B)                         |
+   liberar(LOCK_A)  ----------------------> (Thread 2 agora adquire LOCK_A)
+                                            |
+                                            v
+                                       dormir(50ms)
+                                            |
+                                            v
+                                       adquirir(LOCK_B)  <-- OK
+                                            |
+                                            v
+                                       secao critica
+                                            |
+                                            v
+                                       liberar(LOCK_B)
+                                       liberar(LOCK_A)
+
+   Resultado: as threads podem se alternar/serializar no acesso aos
+   locks, mas NUNCA formam um ciclo de espera -> SEM DEADLOCK.
+
+
+POR QUE A CORRECAO FUNCIONA
+==========================================================================
+A unica diferenca entre as duas versoes e a ORDEM em que cada thread
+pede os locks. Na versao que trava, a Thread 2 pede na ordem inversa
+da Thread 1 (B depois A, enquanto a Thread 1 pede A depois B) --
+isso e o que permite o ciclo de espera circular se formar. Na versao
+corrigida, ambas as threads pedem estritamente na mesma ordem global
+(A antes de B), entao a pior coisa que pode acontecer e uma thread
+ficar esperando a outra LIBERAR o LOCK_A (uma espera linear simples,
+nao um ciclo) -- e essa espera sempre termina, porque a thread que
+detem o LOCK_A nao esta esperando por nada que a outra possui.
+
+Condicao de Coffman quebrada: ESPERA CIRCULAR.

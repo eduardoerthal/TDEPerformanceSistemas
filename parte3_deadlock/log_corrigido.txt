@@ -1,0 +1,14 @@
+[17:45:47] Iniciando versao CORRIGIDA (Thread 1 e Thread 2: sempre A->B)
+[17:45:47] Thread 1: tentando adquirir LOCK_A
+[17:45:47] Thread 1: adquiriu LOCK_A
+[17:45:47] Thread 2: tentando adquirir LOCK_A
+[17:45:47] Thread 1: tentando adquirir LOCK_B
+[17:45:47] Thread 1: adquiriu LOCK_B
+[17:45:47] Thread 1 concluiu
+[17:45:47] Thread 2: adquiriu LOCK_A
+[17:45:47] Thread 2: tentando adquirir LOCK_B
+[17:45:47] Thread 2: adquiriu LOCK_B
+[17:45:47] Thread 2 concluiu
+[17:45:47] ------------------------------------------------------------
+[17:45:47] Ambas as threads terminaram SEM DEADLOCK.
+[17:45:47] ------------------------------------------------------------
