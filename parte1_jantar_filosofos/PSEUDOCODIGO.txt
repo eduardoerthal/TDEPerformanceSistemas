@@ -1,0 +1,95 @@
+PSEUDOCODIGO - JANTAR DOS FILOSOFOS (versao corrigida com hierarquia de recursos)
+====================================================================================
+
+Dados:
+    N = 5 filosofos
+    Garfos 0..N-1   (garfo i fica entre o filosofo i e o filosofo (i+1) mod N)
+
+Para cada filosofo p:
+    garfo_esquerda = p
+    garfo_direita  = (p + 1) mod N
+
+    # HIERARQUIA DE RECURSOS: independente de qual garfo fica fisicamente
+    # a esquerda/direita, sempre pedimos primeiro o de MENOR indice.
+    left  = min(garfo_esquerda, garfo_direita)
+    right = max(garfo_esquerda, garfo_direita)
+
+Loop (para cada filosofo p, em paralelo):
+    pensar()
+    estado[p] <- "com fome"
+
+    adquirir(left)            # bloqueia até o garfo de menor indice estar livre
+    adquirir(right)           # bloqueia até o garfo de maior indice estar livre
+
+    estado[p] <- "comendo"
+    comer()
+
+    liberar(right)
+    liberar(left)
+
+    estado[p] <- "pensando"
+
+
+FLUXOGRAMA (texto)
+====================================================================================
+
+         +-----------------+
+         |     PENSAR      |
+         +-----------------+
+                  |
+                  v
+         +-----------------+
+         |   ESTADO = COM   |
+         |      FOME        |
+         +-----------------+
+                  |
+                  v
+   +---------------------------------+
+   | Adquirir garfo de MENOR indice  |  <-- bloqueia se outro filosofo
+   |        (left = min)             |      já o estiver usando
+   +---------------------------------+
+                  |
+                  v
+   +---------------------------------+
+   | Adquirir garfo de MAIOR indice  |  <-- bloqueia se outro filosofo
+   |        (right = max)            |      já o estiver usando
+   +---------------------------------+
+                  |
+                  v
+         +-----------------+
+         | ESTADO = COMENDO|
+         +-----------------+
+                  |
+                  v
+         +-----------------+
+         |  Liberar right   |
+         |  Liberar left    |
+         +-----------------+
+                  |
+                  v
+         (volta para PENSAR)
+
+
+POR QUE NAO HA DEADLOCK (ordem de aquisicao/liberacao)
+====================================================================================
+- Aquisicao: SEMPRE menor indice -> maior indice, para TODOS os filosofos.
+- Liberacao: ordem inversa (maior -> menor), o que e seguro e nao reintroduz
+  espera circular, pois a liberacao não bloqueia ninguém.
+- Como nenhum filosofo jamais pede um garfo de indice menor enquanto already
+  segura um de indice maior, e impossivel formar um ciclo de espera
+  (F0 espera F1 espera F2 espera ... espera F0), pois isso exigiria que, em
+  algum ponto do ciclo, um filosofo pedisse um indice menor depois de já
+  segurar um maior -- o que a regra proíbe estruturalmente.
+- Condicao de Coffman negada: ESPERA CIRCULAR.
+
+JUSTICA / PROGRESSO
+====================================================================================
+- Todos os filosofos executam o mesmo numero fixo de rodadas e competem pelos
+  garfos seguindo exatamente a mesma regra (sem favorecer nenhum indice
+  especifico de filosofo).
+- Os locks da biblioteca padrao do Python (threading.Lock) atendem aos
+  threads bloqueados essencialmente na ordem em que tentaram adquirir o
+  recurso na implementação CPython usada, o que evita que um mesmo filosofo
+  monopolize um garfo indefinidamente.
+- Na pratica (ver log_corrigido.txt), todos os 5 filosofos completam o mesmo
+  numero de refeicoes, evidenciando ausencia de inanicao.

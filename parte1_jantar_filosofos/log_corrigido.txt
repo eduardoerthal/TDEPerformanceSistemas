@@ -1,0 +1,190 @@
+[17:55:04] Iniciando simulacao CORRIGIDA do Jantar dos Filosofos (hierarquia de recursos).
+[17:55:04] Filosofo 0: pensando
+[17:55:04] Filosofo 1: pensando
+[17:55:04] Filosofo 2: pensando
+[17:55:04] Filosofo 3: pensando
+[17:55:04] Filosofo 4: pensando
+[17:55:04] Filosofo 0: com fome
+[17:55:04] Filosofo 0 tentando pegar garfo de MENOR indice (0)
+[17:55:04] Filosofo 0 pegou garfo de MENOR indice (0)
+[17:55:04] Filosofo 3: com fome
+[17:55:04] Filosofo 2: com fome
+[17:55:04] Filosofo 2 tentando pegar garfo de MENOR indice (2)
+[17:55:04] Filosofo 3 tentando pegar garfo de MENOR indice (3)
+[17:55:04] Filosofo 4: com fome
+[17:55:04] Filosofo 1: com fome
+[17:55:04] Filosofo 3 pegou garfo de MENOR indice (3)
+[17:55:04] Filosofo 1 tentando pegar garfo de MENOR indice (1)
+[17:55:04] Filosofo 2 pegou garfo de MENOR indice (2)
+[17:55:04] Filosofo 4 tentando pegar garfo de MENOR indice (0)
+[17:55:04] Filosofo 1 pegou garfo de MENOR indice (1)
+[17:55:04] Filosofo 0 tentando pegar garfo de MAIOR indice (1)
+[17:55:04] Filosofo 3 tentando pegar garfo de MAIOR indice (4)
+[17:55:04] Filosofo 3 pegou garfo de MAIOR indice (4)
+[17:55:04] Filosofo 3: comendo
+[17:55:04] Filosofo 1 tentando pegar garfo de MAIOR indice (2)
+[17:55:04] Filosofo 2 tentando pegar garfo de MAIOR indice (3)
+[17:55:04] Filosofo 3: pensando
+[17:55:04] Filosofo 2 pegou garfo de MAIOR indice (3)
+[17:55:04] Filosofo 2: comendo
+[17:55:04] Filosofo 2: pensando
+[17:55:04] Filosofo 3: com fome
+[17:55:04] Filosofo 3 tentando pegar garfo de MENOR indice (3)
+[17:55:04] Filosofo 3 pegou garfo de MENOR indice (3)
+[17:55:04] Filosofo 1 pegou garfo de MAIOR indice (2)
+[17:55:04] Filosofo 1: comendo
+[17:55:04] Filosofo 2: com fome
+[17:55:04] Filosofo 2 tentando pegar garfo de MENOR indice (2)
+[17:55:04] Filosofo 1: pensando
+[17:55:04] Filosofo 2 pegou garfo de MENOR indice (2)
+[17:55:04] Filosofo 0 pegou garfo de MAIOR indice (1)
+[17:55:04] Filosofo 0: comendo
+[17:55:04] Filosofo 3 tentando pegar garfo de MAIOR indice (4)
+[17:55:04] Filosofo 3 pegou garfo de MAIOR indice (4)
+[17:55:04] Filosofo 3: comendo
+[17:55:04] Filosofo 0: pensando
+[17:55:04] Filosofo 1: com fome
+[17:55:04] Filosofo 4 pegou garfo de MENOR indice (0)
+[17:55:04] Filosofo 1 tentando pegar garfo de MENOR indice (1)
+[17:55:04] Filosofo 1 pegou garfo de MENOR indice (1)
+[17:55:04] Filosofo 3: pensando
+[17:55:04] Filosofo 2 tentando pegar garfo de MAIOR indice (3)
+[17:55:04] Filosofo 2 pegou garfo de MAIOR indice (3)
+[17:55:04] Filosofo 2: comendo
+[17:55:04] Filosofo 0: com fome
+[17:55:04] Filosofo 0 tentando pegar garfo de MENOR indice (0)
+[17:55:04] Filosofo 1 tentando pegar garfo de MAIOR indice (2)
+[17:55:04] Filosofo 4 tentando pegar garfo de MAIOR indice (4)
+[17:55:04] Filosofo 3: com fome
+[17:55:04] Filosofo 1 pegou garfo de MAIOR indice (2)
+[17:55:04] Filosofo 4 pegou garfo de MAIOR indice (4)
+[17:55:04] Filosofo 4: comendo
+[17:55:04] Filosofo 3 tentando pegar garfo de MENOR indice (3)
+[17:55:04] Filosofo 1: comendo
+[17:55:04] Filosofo 3 pegou garfo de MENOR indice (3)
+[17:55:04] Filosofo 2: pensando
+[17:55:04] Filosofo 2: com fome
+[17:55:04] Filosofo 2 tentando pegar garfo de MENOR indice (2)
+[17:55:04] Filosofo 4: pensando
+[17:55:04] Filosofo 0 pegou garfo de MENOR indice (0)
+[17:55:04] Filosofo 2 pegou garfo de MENOR indice (2)
+[17:55:04] Filosofo 1: pensando
+[17:55:04] Filosofo 3 tentando pegar garfo de MAIOR indice (4)
+[17:55:04] Filosofo 3 pegou garfo de MAIOR indice (4)
+[17:55:04] Filosofo 3: comendo
+[17:55:04] Filosofo 4: com fome
+[17:55:04] Filosofo 1: com fome
+[17:55:04] Filosofo 4 tentando pegar garfo de MENOR indice (0)
+[17:55:04] Filosofo 1 tentando pegar garfo de MENOR indice (1)
+[17:55:04] Filosofo 1 pegou garfo de MENOR indice (1)
+[17:55:04] Filosofo 0 tentando pegar garfo de MAIOR indice (1)
+[17:55:04] Filosofo 2 tentando pegar garfo de MAIOR indice (3)
+[17:55:04] Filosofo 3: pensando
+[17:55:04] Filosofo 2 pegou garfo de MAIOR indice (3)
+[17:55:04] Filosofo 2: comendo
+[17:55:04] Filosofo 2: pensando
+[17:55:04] Filosofo 3: com fome
+[17:55:04] Filosofo 3 tentando pegar garfo de MENOR indice (3)
+[17:55:04] Filosofo 3 pegou garfo de MENOR indice (3)
+[17:55:04] Filosofo 1 tentando pegar garfo de MAIOR indice (2)
+[17:55:04] Filosofo 1 pegou garfo de MAIOR indice (2)
+[17:55:04] Filosofo 1: comendo
+[17:55:04] Filosofo 2: com fome
+[17:55:04] Filosofo 2 tentando pegar garfo de MENOR indice (2)
+[17:55:04] Filosofo 1: pensando
+[17:55:04] Filosofo 2 pegou garfo de MENOR indice (2)
+[17:55:04] Filosofo 0 pegou garfo de MAIOR indice (1)
+[17:55:04] Filosofo 0: comendo
+[17:55:04] Filosofo 3 tentando pegar garfo de MAIOR indice (4)
+[17:55:04] Filosofo 3 pegou garfo de MAIOR indice (4)
+[17:55:04] Filosofo 3: comendo
+[17:55:04] Filosofo 0: pensando
+[17:55:04] Filosofo 1: com fome
+[17:55:04] Filosofo 1 tentando pegar garfo de MENOR indice (1)
+[17:55:04] Filosofo 4 pegou garfo de MENOR indice (0)
+[17:55:04] Filosofo 1 pegou garfo de MENOR indice (1)
+[17:55:05] Filosofo 3: pensando
+[17:55:05] Filosofo 2 tentando pegar garfo de MAIOR indice (3)
+[17:55:05] Filosofo 2 pegou garfo de MAIOR indice (3)
+[17:55:05] Filosofo 2: comendo
+[17:55:05] Filosofo 0: com fome
+[17:55:05] Filosofo 0 tentando pegar garfo de MENOR indice (0)
+[17:55:05] Filosofo 3: com fome
+[17:55:05] Filosofo 3 tentando pegar garfo de MENOR indice (3)
+[17:55:05] Filosofo 2: pensando
+[17:55:05] Filosofo 4 tentando pegar garfo de MAIOR indice (4)
+[17:55:05] Filosofo 3 pegou garfo de MENOR indice (3)
+[17:55:05] Filosofo 1 tentando pegar garfo de MAIOR indice (2)
+[17:55:05] Filosofo 1 pegou garfo de MAIOR indice (2)
+[17:55:05] Filosofo 4 pegou garfo de MAIOR indice (4)
+[17:55:05] Filosofo 1: comendo
+[17:55:05] Filosofo 4: comendo
+[17:55:05] Filosofo 2: com fome
+[17:55:05] Filosofo 2 tentando pegar garfo de MENOR indice (2)
+[17:55:05] Filosofo 4: pensando
+[17:55:05] Filosofo 0 pegou garfo de MENOR indice (0)
+[17:55:05] Filosofo 2 pegou garfo de MENOR indice (2)
+[17:55:05] Filosofo 1: pensando
+[17:55:05] Filosofo 3 tentando pegar garfo de MAIOR indice (4)
+[17:55:05] Filosofo 3 pegou garfo de MAIOR indice (4)
+[17:55:05] Filosofo 3: comendo
+[17:55:05] Filosofo 1: com fome
+[17:55:05] Filosofo 1 tentando pegar garfo de MENOR indice (1)
+[17:55:05] Filosofo 1 pegou garfo de MENOR indice (1)
+[17:55:05] Filosofo 4: com fome
+[17:55:05] Filosofo 4 tentando pegar garfo de MENOR indice (0)
+[17:55:05] Filosofo 0 tentando pegar garfo de MAIOR indice (1)
+[17:55:05] Filosofo 3 terminou todas as rodadas.
+[17:55:05] Filosofo 2 tentando pegar garfo de MAIOR indice (3)
+[17:55:05] Filosofo 2 pegou garfo de MAIOR indice (3)
+[17:55:05] Filosofo 2: comendo
+[17:55:05] Filosofo 2 terminou todas as rodadas.
+[17:55:05] Filosofo 1 tentando pegar garfo de MAIOR indice (2)
+[17:55:05] Filosofo 1 pegou garfo de MAIOR indice (2)
+[17:55:05] Filosofo 1: comendo
+[17:55:05] Filosofo 1 terminou todas as rodadas.
+[17:55:05] Filosofo 0 pegou garfo de MAIOR indice (1)
+[17:55:05] Filosofo 0: comendo
+[17:55:05] Filosofo 0: pensando
+[17:55:05] Filosofo 4 pegou garfo de MENOR indice (0)
+[17:55:05] Filosofo 0: com fome
+[17:55:05] Filosofo 0 tentando pegar garfo de MENOR indice (0)
+[17:55:05] Filosofo 4 tentando pegar garfo de MAIOR indice (4)
+[17:55:05] Filosofo 4 pegou garfo de MAIOR indice (4)
+[17:55:05] Filosofo 4: comendo
+[17:55:05] Filosofo 4: pensando
+[17:55:05] Filosofo 0 pegou garfo de MENOR indice (0)
+[17:55:05] Filosofo 4: com fome
+[17:55:05] Filosofo 4 tentando pegar garfo de MENOR indice (0)
+[17:55:05] Filosofo 0 tentando pegar garfo de MAIOR indice (1)
+[17:55:05] Filosofo 0 pegou garfo de MAIOR indice (1)
+[17:55:05] Filosofo 0: comendo
+[17:55:05] Filosofo 0: pensando
+[17:55:05] Filosofo 4 pegou garfo de MENOR indice (0)
+[17:55:05] Filosofo 0: com fome
+[17:55:05] Filosofo 0 tentando pegar garfo de MENOR indice (0)
+[17:55:05] Filosofo 4 tentando pegar garfo de MAIOR indice (4)
+[17:55:05] Filosofo 4 pegou garfo de MAIOR indice (4)
+[17:55:05] Filosofo 4: comendo
+[17:55:05] Filosofo 4: pensando
+[17:55:05] Filosofo 0 pegou garfo de MENOR indice (0)
+[17:55:05] Filosofo 4: com fome
+[17:55:05] Filosofo 4 tentando pegar garfo de MENOR indice (0)
+[17:55:05] Filosofo 0 tentando pegar garfo de MAIOR indice (1)
+[17:55:05] Filosofo 0 pegou garfo de MAIOR indice (1)
+[17:55:05] Filosofo 0: comendo
+[17:55:05] Filosofo 0 terminou todas as rodadas.
+[17:55:05] Filosofo 4 pegou garfo de MENOR indice (0)
+[17:55:06] Filosofo 4 tentando pegar garfo de MAIOR indice (4)
+[17:55:06] Filosofo 4 pegou garfo de MAIOR indice (4)
+[17:55:06] Filosofo 4: comendo
+[17:55:06] Filosofo 4 terminou todas as rodadas.
+[17:55:06] ============================================================
+[17:55:06] Todas as threads terminaram SEM DEADLOCK.
+[17:55:06] Numero de refeicoes por filosofo (deve ser igual para todos, evidenciando justica/ausencia de inanicao):
+[17:55:06]   Filosofo 0: 5 refeicao(oes)
+[17:55:06]   Filosofo 1: 5 refeicao(oes)
+[17:55:06]   Filosofo 2: 5 refeicao(oes)
+[17:55:06]   Filosofo 3: 5 refeicao(oes)
+[17:55:06]   Filosofo 4: 5 refeicao(oes)
+[17:55:06] ============================================================

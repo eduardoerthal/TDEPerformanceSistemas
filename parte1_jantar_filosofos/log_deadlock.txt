@@ -1,0 +1,71 @@
+[17:50:20] Iniciando simulacao INGENUA do Jantar dos Filosofos.
+[17:50:20] Esperado: alta probabilidade de DEADLOCK (programa pode nao terminar).
+[17:50:20] Filosofo 0: pensando
+[17:50:20] Filosofo 1: pensando
+[17:50:20] Filosofo 2: pensando
+[17:50:20] Filosofo 3: pensando
+[17:50:20] Filosofo 4: pensando
+[17:50:21] Filosofo 0: com fome
+[17:50:21] Filosofo 0 tentando pegar garfo da ESQUERDA (0)
+[17:50:21] Filosofo 0 pegou garfo da ESQUERDA (0)
+[17:50:21] Filosofo 2: com fome
+[17:50:21] Filosofo 2 tentando pegar garfo da ESQUERDA (2)
+[17:50:21] Filosofo 1: com fome
+[17:50:21] Filosofo 2 pegou garfo da ESQUERDA (2)
+[17:50:21] Filosofo 1 tentando pegar garfo da ESQUERDA (1)
+[17:50:21] Filosofo 1 pegou garfo da ESQUERDA (1)
+[17:50:21] Filosofo 3: com fome
+[17:50:21] Filosofo 4: com fome
+[17:50:21] Filosofo 4 tentando pegar garfo da ESQUERDA (4)
+[17:50:21] Filosofo 3 tentando pegar garfo da ESQUERDA (3)
+[17:50:21] Filosofo 4 pegou garfo da ESQUERDA (4)
+[17:50:21] Filosofo 3 pegou garfo da ESQUERDA (3)
+[17:50:21] Filosofo 0 tentando pegar garfo da DIREITA (1)
+[17:50:21] Filosofo 4 tentando pegar garfo da DIREITA (0)
+[17:50:21] Filosofo 3 tentando pegar garfo da DIREITA (4)
+[17:50:21] Filosofo 1 tentando pegar garfo da DIREITA (2)
+[17:50:21] Filosofo 2 tentando pegar garfo da DIREITA (3)
+[17:50:25] ============================================================
+[17:50:25] TIMEOUT de 5.0s atingido: 5 thread(s) ainda bloqueada(s) -> DEADLOCK CONFIRMADO.
+[17:50:25] Estado final de cada filosofo no momento do travamento:
+[17:50:25]   Filosofo 0: com fome
+[17:50:25]   Filosofo 1: com fome
+[17:50:25]   Filosofo 2: com fome
+[17:50:25]   Filosofo 3: com fome
+[17:50:25]   Filosofo 4: com fome
+[17:50:25] Dump de threads (semelhante a um 'thread dump' / jstack):
+Thread 0x00004b34 (most recent call first):
+  File "c:\Users\eduar\OneDrive\\xc1rea de Trabalho\Performance-Sistemas\tde-concorrencia\parte1_jantar_filosofos\filosofos_ingenuo.py", line 72 in filosofo_ingenuo
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982 in run
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045 in _bootstrap_inner
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1002 in _bootstrap
+
+Thread 0x00001b10 (most recent call first):
+  File "c:\Users\eduar\OneDrive\\xc1rea de Trabalho\Performance-Sistemas\tde-concorrencia\parte1_jantar_filosofos\filosofos_ingenuo.py", line 72 in filosofo_ingenuo
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982 in run
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045 in _bootstrap_inner
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1002 in _bootstrap
+
+Thread 0x000056f0 (most recent call first):
+  File "c:\Users\eduar\OneDrive\\xc1rea de Trabalho\Performance-Sistemas\tde-concorrencia\parte1_jantar_filosofos\filosofos_ingenuo.py", line 72 in filosofo_ingenuo
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982 in run
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045 in _bootstrap_inner
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1002 in _bootstrap
+
+Thread 0x00005118 (most recent call first):
+  File "c:\Users\eduar\OneDrive\\xc1rea de Trabalho\Performance-Sistemas\tde-concorrencia\parte1_jantar_filosofos\filosofos_ingenuo.py", line 72 in filosofo_ingenuo
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982 in run
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045 in _bootstrap_inner
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1002 in _bootstrap
+
+Thread 0x00005814 (most recent call first):
+  File "c:\Users\eduar\OneDrive\\xc1rea de Trabalho\Performance-Sistemas\tde-concorrencia\parte1_jantar_filosofos\filosofos_ingenuo.py", line 72 in filosofo_ingenuo
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982 in run
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045 in _bootstrap_inner
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1002 in _bootstrap
+
+Current thread 0x00006e8c (most recent call first):
+  File "c:\Users\eduar\OneDrive\\xc1rea de Trabalho\Performance-Sistemas\tde-concorrencia\parte1_jantar_filosofos\filosofos_ingenuo.py", line 126 in main
+  File "c:\Users\eduar\OneDrive\\xc1rea de Trabalho\Performance-Sistemas\tde-concorrencia\parte1_jantar_filosofos\filosofos_ingenuo.py", line 138 in <module>
+[17:50:26] ============================================================
+[17:50:26] Encerrando o processo (as threads travadas sao 'daemon' e serao descartadas).
